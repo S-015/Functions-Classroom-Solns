@@ -1,0 +1,5 @@
+l1 = []
+print("Enter values for a list: ")
+for i in range(10):
+    l1.append(int(input()))
+print(list(set(l1)))
