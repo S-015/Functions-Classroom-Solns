@@ -1,0 +1,9 @@
+def count(s):
+    cu = cl = 0
+    for i in s:
+        if i.isupper():
+            cu+=1
+        else:
+            cl+=1
+    return cu, cl
+print(count(input("Enter a string to count the number of upper and lower case letters: ")))
