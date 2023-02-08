@@ -1,0 +1,8 @@
+l = []
+def x(ll, ul):
+    global l
+    for n in range(ll, ul):
+        if n%7==0 and n%5!=0:
+            l.append(n)
+    return l
+print(x(int(input("Enter lower limit: ")), int(input("Enter upper limit: "))))
