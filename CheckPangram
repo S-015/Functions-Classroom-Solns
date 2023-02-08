@@ -1,0 +1,11 @@
+k = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'}
+c = 0
+s = set(input("Enter a string: "))
+for i in s:
+    if i in k:
+        c+=1
+if(c==26):
+    print("pangram")
+
+c+= 1 if (i for i in s )in k else 0
+print("True" if c==26 else "not pangram")
